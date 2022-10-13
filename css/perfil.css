@@ -1,0 +1,80 @@
+div.perfil-parent{
+   
+    padding: 10px 0;
+}
+
+div.perfil-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 40px 20px;
+    max-width: 1300px;
+    width: 100%;
+    background-color: white;
+    
+}
+
+div.perfil-img{
+   width: 40%;
+}
+
+div.perfil-form{
+    padding: 20px;
+    width: 60%;
+
+}
+
+div.perfil-form label{
+    font-size: 14px;
+    color: #EE81E3;
+
+}
+
+div.perfil-form input,
+div.perfil-form select{
+    font-size: 14px;
+    color: #EE81E3;
+}
+
+div.perfil-form button{
+    margin-top: 10px;
+    background: linear-gradient(135deg,#EE81E3, #B979F7);
+    color: #fff;
+    border: none;
+ }
+
+ div.perfil-form button:hover{
+    transform: scale(1.10);
+    transition:0.2s;
+ }
+
+
+div.perfil-form .custom-file{
+    padding-top: 10px;
+}
+
+
+div.img {
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+    background-image: url('/img/imagem3x4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #B979F7;
+    border-radius: 5px;
+
+}
+
+
+

@@ -1,0 +1,79 @@
+div.flex-dashboard{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+sidebar {
+    display: block;
+    height: 100%;
+    width: 300px;
+    background-color: #fff;
+}
+
+
+sidebar .sidebar-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 10px 30px;
+    height: 90px;
+    border: 1px solid RGBA(0,0,0,.0625);
+    border-right: 0px;
+}
+
+sidebar .sidebar-title img{
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
+}
+
+sidebar .sidebar-title h2{
+   font-size:18px ;
+   margin-top: 10px;
+}
+
+div.menu{
+    border-right: 1px solid RGBA(0,0,0,.0625);
+}
+
+div.menu ul{
+    list-style-type: none;
+}
+
+div.menu ul li{    
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    
+}
+
+div.menu ul li svg{
+    color:#B979F7;
+    font-size: 25px;
+    
+}
+
+div.menu ul li a{
+    color:#EE81E3;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+div.menu ul li a:hover{
+    color:#B979F7;
+   
+    
+}
+
+.selected{
+    background-color: #f7f7f7;
+    color: black important;
+
+}

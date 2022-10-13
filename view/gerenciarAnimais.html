@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/fontawesome-free-6.2.0-web/css/all.min.css">
+    <title>Dash</title>
+</head>
+<body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="../img/LogoWelcome.png" alt="">
+                <h2>TrackPet</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i> 
+                       <a href="dashboard.html">Dashboard</a> 
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="gerenciaraPerfis.html">Perfis de Usuario</a> 
+                     </li>
+                     <li class="selected" >
+                        <i class="fa-solid fa-dog"></i>
+                        <a href="gerenciarAnimais.html">Animais Perdidos</a> 
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-cat"></i>
+                        <a href="perfil.html">Perfil</a> 
+                     </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main>
+            <header>
+                <a href="dashboard.html"><i class="fa-solid fa-house"></i>  Dashboard</a>
+                <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>  Logout</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>Animais</h2>
+                </div>
+                <div class="panel-row">
+                    <button class="panel panel-50" a-view="cadastrarAnimal" onclick="fetchContent(this)" a-folder="animais" >
+                        <i class="fa-solid fa-user-plus"></i>
+                        Cadastrar Animal
+                    </button>
+                    <button class="panel panel-50" a-view="vizualizarAnimal" onclick="fetchContent(this)" a-folder="animais">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Vizualizar Animal
+                    </button>
+                </div>
+                <div class="content" id="ajax-content">
+                    
+                </div>
+                                                   
+                
+            </div>
+        </main>
+    </div>
+        
+        
+    
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+    <script src="../js/ajax.js"></script>
+</body>
+</html>
